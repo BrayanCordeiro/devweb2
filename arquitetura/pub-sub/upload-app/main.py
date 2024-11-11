@@ -47,7 +47,7 @@ def allowed_file(filename):
 def upload_form():
 	return render_template('upload.html')
 
-@app.route('/upload-img', methods=['POST'])
+@app.route('/', methods=['POST'])
 def upload_image():
 	if 'file' not in request.files:
 		flash('No file part')

@@ -6,8 +6,8 @@ import logging
 from time import sleep
 from PIL import Image, ImageDraw
 
-OUT_FOLDER = '/processed/rotate/'
-NEW = '_rotate'
+OUT_FOLDER = '/processed/text/'
+NEW = '_text'
 IN_FOLDER = "/appdata/static/uploads/"
 
 def insert_text(path_file):
@@ -28,7 +28,7 @@ def insert_text(path_file):
 ### Consumer
 c = Consumer({
     'bootstrap.servers': 'kafka1:19091,kafka2:19092,kafka3:19093',
-    'group.id': 'rotate-group',
+    'group.id': 'text-group',
     'client.id': 'client-1',
     'enable.auto.commit': True,
     'session.timeout.ms': 6000,
