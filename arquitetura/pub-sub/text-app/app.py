@@ -1,9 +1,8 @@
-from PIL import Image, ImageOps
+from PIL import Image
 import os
 from confluent_kafka import Consumer, KafkaError
 import json
 import logging
-from time import sleep
 from PIL import Image, ImageDraw
 
 OUT_FOLDER = '/processed/text/'
