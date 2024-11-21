@@ -25,6 +25,14 @@ services:
     depends_on:
       - kafka1
 
+  notification:
+    build: notification-app
+    container_name: notification
+    volumes:
+      - ./appdata:/appdata
+    depends_on:
+      - kafka1
+
   upload:
     build: upload-app
     container_name: upload
