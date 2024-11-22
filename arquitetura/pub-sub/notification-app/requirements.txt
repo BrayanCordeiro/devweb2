@@ -1,2 +1,2 @@
-Pillow
+python-telegram-bot
 confluent-kafka==1.5.0
